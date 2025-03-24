@@ -1,11 +1,11 @@
 .box1 {
-    background-color:blue;
-    height:50px; width:50px;
+    background-color:gold;
+    height:100px; width:100px;
     border-radius: 50%;
     position:relative;
-    left:50%; top:300px;
+    left:70%; top:200px;
 }
 
 body{
-    background-color: pink;
+    background-color: rosybrown;
 }
