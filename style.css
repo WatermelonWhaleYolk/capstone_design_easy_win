@@ -1,0 +1,11 @@
+.box1 {
+    background-color:blue;
+    height:50px; width:50px;
+    border-radius: 50%;
+    position:relative;
+    left:50%; top:300px;
+}
+
+body{
+    background-color: pink;
+}
