@@ -1,0 +1,7 @@
+.home_wrapper {
+  position: relative;
+  width:100vw;
+  height:100vh;
+  background-color: blue;
+}
+/* 안쪽으로 그림자 줄 것 */

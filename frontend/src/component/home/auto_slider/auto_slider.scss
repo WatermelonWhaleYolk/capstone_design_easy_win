@@ -1,0 +1,58 @@
+.auto_slider {
+  position: relative;
+  top: 20vh;
+  left: 10vw;
+  width: 80vw;
+  height: 70vh;
+  overflow: hidden;
+  background-color: green;
+  ul {
+    position: absolute;
+    width: 80vw;
+    height: 280vh;  /* auto_slider.height X 4 */
+    animation: slide 24s infinite;
+    li {
+      width: 80vw;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.auto_slider li {
+  &:nth-child(1) {
+    background-image: url(../../../asset/bird.jpg);
+  }
+  &:nth-child(2) {
+    background-image: url(../../../asset/cat.jpg);
+  }
+  &:nth-child(3) {
+    background-image: url(../../../asset/dog.jpg);
+  }
+  &:nth-child(4) {
+    background-image: url(../../../asset/squrrel.jpg);
+  }
+}
+
+@keyframes slide {
+  0% { top: 0; }
+  21% { top: 0; } /* A */
+  /* A to B */
+  29% { top: -70vh; } /* B */
+  46% { top: -70vh; }
+  /* B to C */
+  54% { top: -140vh; }
+  71% { top: -140vh; }
+  /* C to D */
+  79% { top: -210vh; }
+  96% { top: -210vh; }
+  /* D to A */
+  100% { top: 0; }
+}
