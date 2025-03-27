@@ -3,7 +3,32 @@
   top: 10vh;
   left: 10vw;
 
+  display:flex;
+  flex-wrap: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  flex:1;
+
   width: 80vw;
-  height: 15vh;
-  background-color: red;
+  height: 10vh;
+
+  background-color: #f4f5f5;
+}
+/*logo 크기지정*/
+.header .nav_bar {
+  font-size: 1.5em;
+}
+.header .login_btn {
+  width:7vw;
+  height:6vh;
+  
+  background-color: #f4f5f5;
+
+  font-size: 0.7em;
+  border-radius: 10%;
+  border-style: none;
+}
+
+.header .login_btn:hover {
+  background-color: gray;
 }

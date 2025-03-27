@@ -23,8 +23,7 @@
 .auto_slider img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .auto_slider li:nth-child(1) {
@@ -46,11 +45,11 @@
   }
   21% {
     top: 0;
-  } /* A */
+  }
   /* A to B */
   29% {
     top: -70vh;
-  } /* B */
+  }
   46% {
     top: -70vh;
   }
