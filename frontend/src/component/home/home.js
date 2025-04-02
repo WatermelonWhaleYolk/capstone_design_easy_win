@@ -1,12 +1,14 @@
-import Header from "./header/header";
-import Auto_slider from "./auto_slider/auto_slider.js";
+import Header from "./header/header.js";
+import Body from "../body/body.js"
 import './home.css'
 
 export default function Home() {
   return (
     <div className="home_wrapper">
+      <div className="main_content">
       <Header />
-      <Auto_slider />
+      <Body />
+      </div>
     </div>
   )
 }

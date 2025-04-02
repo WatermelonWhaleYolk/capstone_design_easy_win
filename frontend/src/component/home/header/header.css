@@ -1,30 +1,56 @@
-.header {
-  position: fixed;
-  top: 10vh;
-  left: 10vw;
-
-  display:flex;
-  flex-wrap: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  flex:1;
-
-  width: 80vw;
+#header {
+  display: flex;
+  position: relative;
+  width: 90vw;
   height: 10vh;
-
-  background-color: #f4f5f5;
+  border-radius: 1em 1em 0 0;
 }
-/*logo 크기지정*/
-.header .nav_bar {
-  font-size: 1.5em;
-}
-.header .login_btn {
-  width:7vw;
-  height:6vh;
-  
-  background-color: #f4f5f5;
 
-  font-size: 0.7em;
-  border-radius: 10%;
-  border-style: none;
+#header div {
+  cursor: pointer;
+}
+
+#header div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 20%;
+  overflow: hidden;
+}
+
+#header img{
+  width:40%;
+  height:100%;
+  object-fit: cover;
+}
+#header div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 60%;
+}
+#header div:nth-child(2) ul {
+  display:flex;
+}
+
+#header div:nth-child(2) ul li {
+margin: 0 2em 0 2em;
+text-align: center;
+font-family: 'Inter', sans-serif;
+font-weight: bold;
+}
+
+#header div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 20%;
+}
+
+#header div:nth-child(3) .btn_1 {
+  width:10vw;
+  height: 5vh;
+  background-color: #ff9219;
+  border:3px solid black;
+  border-radius: 0.5em;
 }

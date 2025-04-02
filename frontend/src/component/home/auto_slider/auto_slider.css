@@ -1,21 +1,18 @@
 .auto_slider {
   position: relative;
-  top: 20vh;
-  left: 10vw;
-  width: 80vw;
-  height: 70vh;
+  width: 30vw;
+  height: 30vh;
   overflow: hidden;
-  background-color: green;
 }
 .auto_slider ul {
   position: absolute;
-  width: 80vw;
-  height: 280vh; /* auto_slider.height X 4 */
+  width: 30vw;
+  height: 120vh; /* auto_slider.height X 4 */
   animation: slide 24s infinite;
 }
 .auto_slider ul li {
-  width: 80vw;
-  height: 70vh;
+  width: 30vw;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,16 +24,16 @@
 }
 
 .auto_slider li:nth-child(1) {
-  background-image: url(../../../asset/bird.jpg);
+  background-image: url('../../../asset/cat.jpg');
 }
 .auto_slider li:nth-child(2) {
-  background-image: url(../../../asset/cat.jpg);
+  background-image: url('../../../asset/bird.jpg');
 }
 .auto_slider li:nth-child(3) {
-  background-image: url(../../../asset/dog.jpg);
+  background-image: url('../../../asset/dog.jpg');
 }
 .auto_slider li:nth-child(4) {
-  background-image: url(../../../asset/squrrel.jpg);
+  background-image: url('../../../asset/squrrel.jpg');
 }
 
 @keyframes slide {
@@ -48,24 +45,24 @@
   }
   /* A to B */
   29% {
-    top: -70vh;
+    top: -30vh;
   }
   46% {
-    top: -70vh;
+    top: -30vh;
   }
   /* B to C */
   54% {
-    top: -140vh;
+    top: -60vh;
   }
   71% {
-    top: -140vh;
+    top: -60vh;
   }
   /* C to D */
   79% {
-    top: -210vh;
+    top: -90vh;
   }
   96% {
-    top: -210vh;
+    top: -90vh;
   }
   /* D to A */
   100% {
