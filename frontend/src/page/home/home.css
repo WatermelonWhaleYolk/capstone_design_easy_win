@@ -1,52 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-
-
-.body_wrapper{
+.body_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   width: 90vw;
   height: 80vh;
 }
 
 .body_wrapper div:nth-child(1) {
-  margin-top:30px;
-  font-size:15px;
+  margin-top: 30px;
+  font-size: 15px;
+  color: #4b4b4b;
+  font-weight: bold;
 }
+
 .body_wrapper div:nth-child(2) {
   font-size: 75px;
-  font-family: 'Playfair Display', serif; /* import font */
+  font-family: "Playfair Display", serif; /* import font */
   font-weight: bold;
+  line-height: 1.2;
 }
 .body_wrapper div:nth-child(3) {
   font-size: 15px;
   margin-bottom: 2em;
+  color: #4b4b4b;
+  font-weight: bold;
 }
 
 .body_wrapper div {
   text-align: center;
 }
 
-.btn_1 {
-  width:10vw;
+#go_to_volunteer_work_btn {
+  width: 10vw;
   height: 5vh;
   background-color: #ff9219;
-  color:#ffffff;
-  border:3px solid black;
+  color: #ffffff;
+  border: 3px solid black;
   border-radius: 0.5em;
+  font-weight: bold;
 }
 
-.btn:hover {
-  cursor: pointer;
+#how_to_use_dialog {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 600px;
+  height:500px;
+  overflow: hidden;
 }
-
-.btn_2 {
-  width:10vw;
+#how_to_use_dialog_btn {
+  width: 10vw;
   height: 5vh;
   background-color: #ffffff;
   color: #ff9219;
-  border:3px solid black;
+  border: 3px solid black;
   border-radius: 0.5em;
-  margin-left:25px;
+  margin-left: 25px;
+  font-weight: bold;
 }

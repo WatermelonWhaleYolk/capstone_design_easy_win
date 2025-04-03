@@ -43,6 +43,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
 
 @font-face {
     font-family: 'SOYOMapleBoldTTF';
@@ -53,7 +58,7 @@ table {
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3jb8Ek59w.ttf') format('truetype');
+    src: url('./asset/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

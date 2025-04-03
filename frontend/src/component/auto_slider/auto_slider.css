@@ -24,16 +24,16 @@
 }
 
 .auto_slider li:nth-child(1) {
-  background-image: url('../../asset/cat.jpg');
+  background-image: url('../../asset/images/cat.jpg');
 }
 .auto_slider li:nth-child(2) {
-  background-image: url('../../asset/bird.jpg');
+  background-image: url('../../asset/images/bird.jpg');
 }
 .auto_slider li:nth-child(3) {
-  background-image: url('../../asset/dog.jpg');
+  background-image: url('../../asset/images/dog.jpg');
 }
 .auto_slider li:nth-child(4) {
-  background-image: url('../../asset/squrrel.jpg');
+  background-image: url('../../asset/images/squrrel.jpg');
 }
 
 @keyframes slide {

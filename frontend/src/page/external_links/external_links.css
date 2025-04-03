@@ -1,0 +1,15 @@
+#external_links_table tr, #external_links_table td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.href_btn {
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  border: none;
+}
+.href_btn a {
+  text-decoration: none;
+  color: inherit;
+}

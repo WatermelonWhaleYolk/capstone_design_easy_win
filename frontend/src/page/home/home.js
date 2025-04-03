@@ -1,7 +1,9 @@
+import { useRef } from "react";
 import AutoSlider from "../../component/auto_slider/auto_slider.js"
-import "./home.css";
+import "./home.css"
 
 export default function Home() {
+  const dialogRef = useRef(null);
   return (
         <div className="body_wrapper">
           <div>경일대학교 학생들을 위한 봉사활동 통합 플랫폼!</div>
@@ -17,11 +19,17 @@ export default function Home() {
             당신과 함께 만들어가는 나눔의 공간, KVP
           </div>
           <div>
-            <button className="btn_1">Get Funded</button>
-            <button className="btn_2">Get Out</button>
+            <button id="go_to_volunteer_work_btn">간편 봉사활동 신청</button>
+            <button id="how_to_use_dialog_btn" onClick={() => dialogRef.current.showModal()}>사용 방법</button>
+            <dialog id="how_to_use_dialog" ref={dialogRef}>
+              <h2>1. 과목을 선택하세요</h2>
+              <p> 2. 어쩌고</p>
+              <AutoSlider />
+              <button id="how_to_use_dialog_close_btn" onClick={() => dialogRef.current.close()}>닫기</button>
+            </dialog>
           </div>
           <div>
-            <AutoSlider />
+            <img src="../../asset/kiu_slogan.jpg" alt="kiu slogan"/>
           </div>
         </div>
   );
