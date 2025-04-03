@@ -1,6 +1,6 @@
 import './auto_slider.css'
 
-export default function Auto_slider() {
+export default function Autoslider() {
   return (
     <div className="auto_slider"> 
       <ul>
