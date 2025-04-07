@@ -1,0 +1,106 @@
+.about_us_wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #8c2131;
+  overflow-y: auto;
+}
+
+
+.main_content {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+   width: 90vw;
+  height: 90vh;
+   padding: 2em;
+   overflow-y: auto;
+   border-radius: 1em 1em 0 0;
+   background-color: #ffffff;
+   box-sizing: border-box;
+  margin: -30px auto 0 auto; 
+ box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.goal::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.goal {
+  margin-bottom: 3em;
+}
+
+.goal .bx_tit {
+  float: left;
+  width: 140px;
+  height: 140px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.goal .bx_tit .tit1 { /*텍스트서식*/
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.goal .bx_tit .tit2 {  /*텍스트서식*/
+  font-size: 20px;
+  color: white;
+  margin: 5px 0 0 0;
+}
+
+.goal .cont {
+  float: left;
+  width: calc(100% - 160px);
+  padding: 20px 30px;
+  border-top: 1px solid #ccc;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.goal .cont .tit {
+  font-size: 26px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.goal .cont p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+
+.goal .bx_tit.c1 {
+  background-image: url('../../asset/red1.jpg'); 
+}
+
+.goal .bx_tit.c2 {
+  background-image: url('../../asset/yellow2.jpg'); 
+}
+
+.goal .bx_tit.c3 {
+  background-image: url('../../asset/blue3.jpg'); 
+}
+
+
+.about_top_image {
+  width: 85%;
+  height: 85%;
+  display: block;
+  margin: 0 auto; 
+  border-radius: 1em;
+  object-fit: cover;
+}

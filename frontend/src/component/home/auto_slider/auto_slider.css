@@ -1,0 +1,71 @@
+.auto_slider {
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+  overflow: hidden;
+}
+.auto_slider ul {
+  position: absolute;
+  width: 30vw;
+  height: 120vh; /* auto_slider.height X 4 */
+  animation: slide 24s infinite;
+}
+.auto_slider ul li {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auto_slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.auto_slider li:nth-child(1) {
+  background-image: url('../../../asset/cat.jpg');
+}
+.auto_slider li:nth-child(2) {
+  background-image: url('../../../asset/bird.jpg');
+}
+.auto_slider li:nth-child(3) {
+  background-image: url('../../../asset/dog.jpg');
+}
+.auto_slider li:nth-child(4) {
+  background-image: url('../../../asset/squrrel.jpg');
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  21% {
+    top: 0;
+  }
+  /* A to B */
+  29% {
+    top: -30vh;
+  }
+  46% {
+    top: -30vh;
+  }
+  /* B to C */
+  54% {
+    top: -60vh;
+  }
+  71% {
+    top: -60vh;
+  }
+  /* C to D */
+  79% {
+    top: -90vh;
+  }
+  96% {
+    top: -90vh;
+  }
+  /* D to A */
+  100% {
+    top: 0;
+  }
+}/*# sourceMappingURL=auto_slider.css.map */

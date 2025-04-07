@@ -1,0 +1,17 @@
+.home_wrapper {
+  position: relative;
+  width:100vw;
+  height:100vh;
+  background-color: #8c2131;
+}
+.main_content {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 90vw;
+  height: 95vh;
+
+  border-radius: 1em 1em 0 0;
+  background-color: #ffffff;
+}
+
