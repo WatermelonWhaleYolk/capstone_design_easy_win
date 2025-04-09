@@ -1,6 +1,8 @@
+const dotenv = require('dotenv')
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 puppeteer.use(StealthPlugin());
+dotenv.config();
 
 async function runPuppeteer() {
   const browser = await puppeteer.launch({headless:false});
@@ -13,9 +15,8 @@ async function runPuppeteer() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  await page.type('input[name="id"]', "kjkj5757", {delay:randomDelay(100, 300)});
-  await page.type('input[name="password"]', "k1o2r3e4a5!", {delay:randomDelay(100, 300)});
-  /* #에 아이디와 비밀번호*/
+  await page.type('input[name="id"]', process.env.EVERYTIME_ID, {delay:randomDelay(100, 300)});
+  await page.type('input[name="password"]', process.env.EVERYTIME_PASSWORD, {delay:randomDelay(100, 300)});
   await page.click('input[type="submit"]');
 
   await page.waitForNavigation();
@@ -38,22 +39,3 @@ console.log(timetable);
 };
 
 runPuppeteer();
-  /* 데이터 추출 */
-  // async function getTimestamp() {
-  //   await page.evaluate
-  //   return document.querySelector(.list.tbody.tr.td:nth-child(1,2,3,4,6,7,9))
-  // }
-/* const title = await page.evaluate(() => {
-    return document.title;
-});
-
-// 여러 요소 데이터 수집
-const links = await page.evaluate(() => {
-    const anchors = document.querySelectorAll('a');
-    return Array.from(anchors).map(a => a.href);
-});
-
-// 매개변수 사용
-const getText = await page.evaluate((selector) => {
-    return document.querySelector(selector).textContent;
-}, '.my-class');*/

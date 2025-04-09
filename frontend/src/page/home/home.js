@@ -1,6 +1,7 @@
 import { useRef } from "react";
-import AutoSlider from "../../component/auto_slider/auto_slider.js"
 import "./home.css"
+import AutoSlider from "../../component/auto_slider/auto_slider.js"
+import kiuSlogan_img from "../../asset/images/kiu_slogan.jpg"
 
 export default function Home() {
   const dialogRef = useRef(null);
@@ -19,17 +20,17 @@ export default function Home() {
             당신과 함께 만들어가는 나눔의 공간, KVP
           </div>
           <div>
-            <button id="go_to_volunteer_work_btn">간편 봉사활동 신청</button>
-            <button id="how_to_use_dialog_btn" onClick={() => dialogRef.current.showModal()}>사용 방법</button>
-            <dialog id="how_to_use_dialog" ref={dialogRef}>
+            <button className="go_to_volunteer_work_btn">간편 봉사활동 신청</button>
+            <button className="how_to_use_dialog_btn" onClick={() => dialogRef.current.showModal()}>사용 방법</button>
+            <dialog className="how_to_use_dialog" ref={dialogRef}>
               <h2>1. 과목을 선택하세요</h2>
               <p> 2. 어쩌고</p>
               <AutoSlider />
-              <button id="how_to_use_dialog_close_btn" onClick={() => dialogRef.current.close()}>닫기</button>
+              <button className="how_to_use_dialog_close_btn" onClick={() => dialogRef.current.close()}>닫기</button>
             </dialog>
           </div>
           <div>
-            <img src="../../asset/kiu_slogan.jpg" alt="kiu slogan"/>
+            <img src={kiuSlogan_img} alt="kiu_slogan_img"/>
           </div>
         </div>
   );

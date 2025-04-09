@@ -1,12 +1,13 @@
-import "./header.css";
 import { Link } from "react-router-dom";
+import "./header.css";
+import headerLogo from '../../asset/images/kiu_mascot.png'
 export default function Header() {
   return (
     <nav id="header">
       <div>
         <div className="header_logo">
           <Link to="/">
-            <img src="../../asset/images/kiumascot.png" alt="header_logo" />
+            <img src={headerLogo} alt="headerlogo" className="header_logo"/>
           </Link>
         </div>
       </div>
@@ -24,7 +25,7 @@ export default function Header() {
               경일대학교 바로가기
             </a>
           </li>
-          <li>About us</li>
+          <li><Link to="/about_us">About us</Link></li>
           <li>For Lawyers</li>
           <li>For Plaintiffs</li>
         </ul>
