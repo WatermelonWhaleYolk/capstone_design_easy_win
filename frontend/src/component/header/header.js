@@ -11,7 +11,7 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <div>
+      <div className="header_nav_bar">
         <ul>
           <li>
             <Link to="/external_links">봉사활동 사이트</Link>
