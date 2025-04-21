@@ -1,0 +1,46 @@
+.timetable_wrapper {
+  display: grid;
+  grid-template-columns: 20vw 70vw;
+  grid-template-rows: 30vh 55vh;
+  grid-template-areas:
+  " timetable_input course_search_list "
+  " chosen_course course_search_list ";
+  position: relative;
+  width:90vw;
+  height:85vh;
+}
+.timetable_input_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border:1px solid black;
+  grid-area: timetable_input;
+}
+.timetable_input_box input {
+  width:100%;
+  border:1px solid black;
+}
+.timetable_input_box input::placeholder {
+  text-align: center;
+}
+.timetable_input_box button {
+  width:100%;
+  height:5vh;
+  margin-bottom: 2vh;
+}
+.chosen_course {
+  border: 1px solid black;
+  grid-area:chosen_course;
+}
+
+.course_search_list {
+  border: 1px solid black;
+  grid-area:course_search_list;
+}
+
+.course_search_btn {
+  width: 15vw;
+  height: 10vh;
+  margin-top:3vh;
+}

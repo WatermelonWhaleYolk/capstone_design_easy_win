@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./header.css";
 import headerLogo from '../../asset/images/kiu_mascot.png'
+import kiuMark from '../../asset/images/kiu_mark.png'
 export default function Header() {
   return (
     <nav id="header">
@@ -31,7 +32,7 @@ export default function Header() {
         </ul>
       </div>
       <div>
-        <button className="btn_1"></button>
+        <img src={kiuMark} alt="kiu_mark" className="kiu_mark"/>
       </div>
     </nav>
   );

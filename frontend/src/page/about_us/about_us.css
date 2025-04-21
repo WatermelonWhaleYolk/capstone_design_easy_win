@@ -74,3 +74,11 @@
 .about_us_article_gridbox ul {
   list-style: square !important;
 }
+
+.about_us_main { /*about us 폰트*/
+  font-family: 'GowunDodum-Regular', sans-serif;
+}
+
+.about_us_article_gridbox_item span {
+  font-weight: bold;
+}

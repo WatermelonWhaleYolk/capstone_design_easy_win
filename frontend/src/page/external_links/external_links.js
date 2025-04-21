@@ -22,6 +22,21 @@ export default function ExternalLinks() {
       text: "문화 자원봉사 플랫폼",
       url: "https://csv.culture.go.kr/frt/main.do",
     },
+    {
+      name: "위스타트",
+      text: "아동 복지 및 교육 중심의 자원봉사 사이트",
+      url: "https://www.westart.or.kr"
+    },
+    {
+      name: "한국청소년활동진흥원(KYWA)",
+      text: "청소년 대상 봉사활동과 리더십 캠프를 주관",
+      url: "https://www.youth.go.kr "
+    },
+    {
+      name: "열매나눔인터내셔널",
+      text: "국내외 소외계층을 지원하는 봉사활동 사이트",
+      url: "https://myi.or.kr",
+    },
   ];
 
   return (
